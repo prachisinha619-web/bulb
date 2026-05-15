@@ -82,27 +82,30 @@
             
         </p>
    </div>
-<script>
-    let bulb = document.getElementById('bulb');
-    let btn = document.getElementById('btn');
-    let light = false;
-    
-    function change() {
-        
-        if (light == false)
-        {
-            bulb.setAttribute("src", "bulb1.jpg");
-            light = true;
-            btn.innerHTML = "Turn Off";
-        }
-        else {
-            blb.setAttribute("src", "bulb.jpg");
-            light = false;
-            btn.innerHTML = "Turn On";
-        }
-        
-    }
-    </script>
+
+     <script>
+            let bulb = document.getElementById('bulb');
+            let btn = document.getElementById('btn');
+            const audio = new Audio('click.mp3');
+            let light = false;
+
+            function change () {
+                audio.play();
+
+                if(light==false) {
+                    bulb.setAttribute("src", "bulb.jpg");
+                    light = true;
+                    btn.innerHTML = "Turn Off";
+                }
+                else {
+                    bulb.setAttribute("src", "bulb1.jpg");
+                    light = false;
+                    btn.innerHTML = "Turn On";
+                }
+
+            }
+        </script>
+    </body>   
     
     </body>
 </html>
