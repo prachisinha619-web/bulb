@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Bulb project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+        * {
+             margin:0;
+             padding:0;
+             box-sizing:border-box;
+        }
+         
+        body {
+            background-color: white; 
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            }  
+  
+        h1 {
+            color:red;
+            text-align:center;
+            background-color:black;
+            height:50px;
+            margin:5px;
+            padding:5px;
+        }
+        div {
+             width: 350px;
+             text-align: center;
+             height: 350px;
+            
+        }
+        img {
+                width:350px;
+             }
+        button {
+               width: 350px;
+               height: 40px;
+               font-size: 20px;
+               margin: 5px;
+               border-radius:5px;
+                background-color:green;
+        }  
+        
+        h2 {
+            font-size:30px;
+            margin:20px;
+            padding:10px;
+            text-align:left ;
+            
+        }
+    p {
+         font-size: 20px;
+         margin:5px;
+         padding:10px;
+         text-align:left;
+         color:hsla(225, 15%, 31%, 1);
+    }
+        </style>
+    </head>
+    
+    <body>
+        <h1><b><u>Light Toggle Project</u></b></h1>
+       
+        <div>
+            <img src="/images /bulb1.jpg" alt="image not found" id="blb">
+           <button onclick="change()" id="btn">Turn On</button>
+        </div>
+      
+        <h2>💡About this Project </h2>
+        
+        <p><i>
+            
+           👉 It is a simple bulb ON/OFF project created 
+            using HTML, CSS, and JavaScript.
+            <br>
+            <br>
+            It changes the bulb state when the buttons 
+            are clicked.
+            
+        </p>
+   </div>
+<script>
+    let blb = document.getElementById('blb');
+    let btn = document.getElementById('btn');
+    let light = false;
+    
+    function change() 
+        
+        if (light == false)
+        {
+            bulb.setAttribute("src", "<button onclick="change()" id="btn">Turn On</button>");
+            light = true;
+            btn.innerHTML = "Turn Off";
+        }
+        else {
+            blb.setAttribute("src", "/images /bulb.jpg");
+            light = false;
+            btn.innerHTML = "Turn On";
+        }
+        
+    }
+    </script>
+    
+    </body>
+</html>
