@@ -83,15 +83,15 @@
         </p>
    </div>
 <script>
-    let blb = document.getElementById('blb');
+    let bulb = document.getElementById('bulb');
     let btn = document.getElementById('btn');
     let light = false;
     
-    function change() 
+    function change() {
         
         if (light == false)
         {
-            blb.setAttribute("src", "<button onclick="change()" id="btn">Turn On</button>");
+            bulb.setAttribute("src", "<button onclick="change()" id="btn">Turn On</button>");
             light = true;
             btn.innerHTML = "Turn Off";
         }
